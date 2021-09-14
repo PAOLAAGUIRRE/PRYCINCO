@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challengue responsive</title>
+    <style>
+
+        * { transition: all 0.5s  }
+
+        body {
+            background-color: rgb(5, 1, 1);
+            font-family: Arial; 
+            font: 26px; 
+             }
+        
+         .container {
+			width: 1350px;
+            margin: 0 auto;
+         
+
+		}
+        div.logo {
+            background: url(imgs/logoadsi5.jpg) no-repeat center;
+            background-size: 40%;
+			height: 200px;
+        
+        }
+         ul li{
+            
+            background-size: cover;
+            position: relative;
+            height: 300px;
+            width: 290px;
+            display: inline-block;
+            margin: 10px;
+            overflow: hidden;
+            border: 2px solid white;
+            text-align: center;
+     
+            
+        }
+        .img1{
+            background: url(imgs/adsi2.jpg) no-repeat center;
+        }
+        .img2{
+            background: url(imgs/adsi3.jpg) no-repeat center;
+            background-size: 200%;
+        }
+        .img3{
+            background: url(imgs/adsi4.jpg) no-repeat center;
+        }
+        .img4{
+            background: url(imgs/adsi5.jpg) no-repeat center;
+        }
+
+        li p {
+            background-color: rgba(4, 183, 238, 0.301);
+            position: absolute;
+            width: 300px;
+            height: 40px;
+            cursor: pointer;
+            color: black;
+            text-align: center;
+            margin-top: 260px;
+            font-family: arial black;
+           
+        }
+        li p {
+            transition: transform .5s, ease-in;
+        }
+        
+        li p:hover {
+            transform: scale(1.01);
+            background-color: rgba(4, 183, 238, 0.178);
+            opacity: 0.75;
+            transform: translatey(-25px);
+            height: 100px;
+           
+        }
+        article{
+            width: auto;
+            height: 300px;
+            margin: 38px;
+            margin-left: 50px;
+            display: inline-block;
+            border: dotted;
+            border-color: aqua;
+            text-align: justify;
+        } 
+
+        img{
+            height: 290px;
+            width: 300px;
+            background-size: cover;
+            float: left;
+            
+            /* display: inline-block; */
+        }
+        p{
+            color: aquamarine;
+        }
+       
+        /* -------------------------------TABLET----------------------------- */
+		/* @media screen and (min-width: 689px) and (max-width: 1023px) { */
+            @media (max-width: 1290px) {
+			.container {
+				width: 680px;
+			}
+			div.logo {
+				background-size: 60%;
+			}
+			ul li {
+				margin: 10px;
+			}
+			li p {
+				width: 400px;
+			}
+			li p:hover {
+				font-size: 1.4em;
+                
+			}
+            article{
+                overflow: hidden;
+                
+            }
+            .img1, .img2 {
+				position :relative;
+                top: 5px;
+                
+            }
+			.texto1, .texto2 {
+				overflow: scroll;
+				height: 317px;
+                
+            }
+		}
+		/* -----------------------------------MOVIL-------------------- */
+		/* @media screen and (max-width: 690px) { */
+            @media (max-width: 690px) {
+			.container{
+				width: 480px;
+			}
+            div.logo {
+				background-size: 80%;
+			}
+			ul li {
+				display: block;
+				margin: 28px auto;
+			}
+			
+			li p, article {
+				display: block;
+			}
+			article  {
+				margin-left: 120px;
+				width: 280px;
+                height: 560px;
+                overflow: hidden;
+                font-size: 14px;
+			}
+            .texto1, .texto2 {
+				overflow: hidden !important;
+                font: size 8px;  
+                margin-left: 0px;
+                width: 275px;
+                
+            }
+        }
+    
+    </style>
+    <body>
+</head>
+<header>
+    <div class="logo"></div>
+<div class="container">
+    <ul>
+        <li class="img1">
+            <p>ADSI</p>
+        </li>
+        <li class="img2">
+            <p>ADSI</p>
+        </li>
+        <li class="img3">
+            <p>ADSI</p>
+        </li>
+        <li class="img4">
+            <p>ADSI</p>
+        </li>
+    </ul>
+</div>
+
+
+
+    <article class="art1">
+        <img class="img1" src="imgs/adsi1.jpg" alt="">
+      <div class="texto1">
+            <p>
+                Programming is the process used to devise and order the actions necessary to carry out a project, prepare certain machines or devices to start working at the time and in the desired way, or develop programs for use on computers.1
+
+                Currently, the notion of programming is closely associated with the creation of computer applications and video games. In this sense, it is the process by which a person develops a program, using a tool that allows him to write the code (which can be in one or more languages, such as C ++, Java and Python, among others) and another that is capable of "translating" it into what is known as machine language, which can "understand" the microprocessor.  
+            </p>
+        </div>
+    </article>
+    <article class="art1">
+        <img class="img2"src="imgs/adsi6.jpg" alt="">
+      <div class="texto2">
+            <p>
+                Information Security, sometimes shortened to InfoSec, is the practice of protecting information by mitigating information risks. It is part of information risk management.[1] It typically involves preventing or reducing the probability of unauthorized/inappropriate access to data, or the unlawful use, disclosure, disruption, deletion, corruption, modification, inspection, recording, or devaluation of information.[2] It also involves actions intended to reduce the adverse impacts of such incidents. Protected information may take any form, e.g. electronic or physical, tangible (e.g. paperwork) or intangible
+            </p>
+        </div>
+    </article>
+</section>
+</body>
+</html>
